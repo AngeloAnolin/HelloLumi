@@ -2,9 +2,9 @@ module Main exposing (main)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
-import Html.Events exposing (onClick)
 import Navigation exposing (Location)
 import UrlParser exposing ((</>))
+
 
 main : Program Never Model Msg
 main = 
@@ -259,6 +259,7 @@ philosophiesOnSoftware model =
 
     ]
 
+
 aligningFurther : Model -> List ( Html Msg )
 aligningFurther model =
     [ div [] 
@@ -286,6 +287,7 @@ aligningFurther model =
 
     ]
 
+
 inSummary : Model -> List ( Html Msg )    
 inSummary model =
     [ div [] 
@@ -306,8 +308,18 @@ inSummary model =
                     , p [] [ text "Working for the local government, I am fortunate to have taken different roles, ranging from developing software, researching software usability, and outlining recommended workflows, providing end user support, finding bugs that stops the users from using the system and engaging clients across different business units to address their technology requirements. I have also been assigned in high-impact software projects and pride myself in being able to deliver the outcome required for its success. I’ve also been involved heavily in the adoption of cloud-based email and productivity software that everyone in the city now uses and have explored the software capabilities to automate the migration of all users." ]
                     , h5 [] [ text "Senior Programmer - Paterson GlobalFoods Inc. (February 2010 - February 2012)" ]
                     , p [] [ text "My time with Paterson has been characterized with leading multiple software projects, engaging internal users and business, documentation, and training for released software and providing technical support across different systems. Delivering web and mobile solutions has allowed the company to harness technology to fully support the business and ensured that different locations can access data and be up-to-date with information required to operate their units." ]
-                    , p [] [ text "" ]
-                    , p [] [ text "" ]
+                    , h5 [] [ text "Software Developer - Brunei Shell Petroleum (February 2007 – November 2009)" ]
+                    , p [] [ text "Being the senior developer in the conversion and migration of legacy applications to standard web and windows based solution, I’ve analyzed different software systems, ranging from logistics, finance, health and safety and engineering that are key to the business’ operations. Teaming up with other colleagues in the organization, we established coding practices and guidelines that served as the backbone for any new software projects within the company. I’ve also provided mentorship to junior developers and interns in development and implementation of software projects." ]
+                    , h2 [] [ text "Technology Stack" ]
+                    , p [] [ text "Most of the technology stack I worked with centered on corporate software products such as Microsoft .NET and SQL Server / Oracle database backends. Heavy usage of plain old Javascript mixed with good old jQuery and some Telerik platform goodness." ]
+                    , p [] [ text "On my spare time, I have dabbled with different frameworks and languages such as Go, Python and Elixir and front-end frameworks like ReactJS, VueJs, AngularJS and Elm. This in conjunction with known CSS frameworks like Semantic UI, Bulma, Material Design and the ever-trusted Bootstrap." ]
+                    , h2 [] [ text "Let's Take Things to the Next Level..." ]
+                    , ul [] 
+                        [ li []
+                            [ a [ href "mailto: angelo.anolin@gmail.com" ] [ text "angelo.anolin@gmail.com" ] ]
+                        , li []
+                            [ a [ href "tel: +17809538276" ] [ text "+1 780 953-8276" ] ]
+                        ]
                     ]
                 ]
             ]
@@ -341,82 +353,3 @@ pageNotFound model =
         ]
 
     ]
-
-
-
-{- main = 
-  div []
-    [ div [ class "color-change", id "left"] [] 
-    , div [ class "color-change", id "right"] [] 
-    , div [ class "color-change", id "top"] 
-        [ img [ class "home", src "home.png" ] []
-        ] 
-    , div [ class "color-change", id "bottom"] []
-    , div [ class "navigation"] 
-        [ table [] 
-            [ tbody [] 
-                [ tr [] 
-                     [ td [ class "intro active" ] 
-                        [ a [ href "#introduction"] [ text "Introduction" ] 
-                        ]
-                     ]
-                , tr [] 
-                     [ td [ class "preface active" ]
-                        [ a [ href "#preface"] [ text "Preface" ] 
-                        ]
-                     ]
-                , tr [] 
-                     [ td [ class "rules active" ]
-                        [ a [ href "#rules"] [ text "Rules" ] 
-                        ]
-                     ]
-                , tr [] 
-                     [ td [ class "communication active" ]
-                        [ a [ href "#communication"] [ text "Communication" ] 
-                        ]
-                     ]
-                , tr [] 
-                     [ td [ class "structure active" ]
-                        [ a [ href "#structure"] [ text "Structure" ] 
-                        ]
-                     ]
-                , tr [] 
-                     [ td [ class "value active" ]
-                        [ a [ href "#what-we-value"] [ text "Values" ] 
-                        ]
-                     ]
-                , tr [] 
-                     [ td [ class "space active" ]
-                        [ a [ href "#space"] [ text "Space" ] 
-                        ]
-                     ]
-                ]
-            ]
-        ]
-    , div [ id "introduction" ]
-        [ div [ class "layout full", id "24649e"]
-            [ div [ class "header" ] 
-                [ h1 [] [text "Introduction" ]
-                , img [ class "preface", src "preface.jpg" ] []
-                ]
-            , div [ class "text-container"]
-                [ p [] [ text "Not every company has the opportunity to meaningfully and directly impact individuals in a way that makes their lives tangibly better. Lots of companies believe that through a series of semi-connected transactions they are improving something or inventing something new and, in that moment, they are making someone’s life better. Other companies subscribe to the philosophy that through making their company a success they are improving the lives of the people who work there by providing a steady paycheck and benefits. Much of that sentiment is what makes building a company, really, any company at all, a justifiable effort. Otherwise, we’d all be working for riskless giant enterprises or the government." ] 
-                , p [] [ text "But occasionally companies are born that get to tackle something different, something that transcends the usual beliefs about capitalism and the economy, and something that has the chance to create new opportunities for millions. That is what we’re building at Zaarly." ] 
-                , p [] [ text "We are building something that could quite literally create a new economy and transform lives by connecting people. We work for those people. If we do our job well, we’ll create something that matters as much to them as it does to us, and all of our lives will be better for it." ] 
-                ]
-            ]
-        ]
-    , div [ id "preface" ] 
-        [ div [ class "layout full", id "b1ab87"]
-            [ div [ class "header"] 
-                [ h1 [] [ text "Preface" ]
-                , img [ class "preface", src "preface.jpg" ] []
-                ]
-            ,  div [ class "text-container"]
-                [ p [] [ text "Preface 1" ] 
-                , p [] [ text "Preface 2" ] 
-                , p [] [ text "Preface 3" ] 
-                ]
-            ]
-        ]
-    ] -}
