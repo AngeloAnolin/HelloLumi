@@ -6,3 +6,12 @@
 
 ### Download and install Elm
 [Elm](https://guide.elm-lang.org/install.html)
+
+### Compile source file
+`elm-make src/Main.elm --output Main.js`
+
+### Use http-server to browse the app
+`http-server`
+
+### Navigate to your browser
+[http://localhost:8080/](http://localhost:8080/)
