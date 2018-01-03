@@ -1,1 +1,8 @@
-# [Application for Lumi Front-End Developer](https://angelo-hello-lumi.surge.sh) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# [Application for Lumi Front-End Developer](https://angelo-hello-lumi.surge.sh)
+
+> Résumé application for the Front-End Developer position with Lumi.
+
+## Build Setup
+
+### Download and install Elm
+[Elm](https://guide.elm-lang.org/install.html)
